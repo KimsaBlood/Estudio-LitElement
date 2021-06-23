@@ -55,6 +55,8 @@ img{
 }
 
 .my-btn{
+    margin-top:10px;
+    margin-left:465px;
     background-color: transparent;
     border-style:solid;
     border-color: #f7f7f7;

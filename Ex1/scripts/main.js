@@ -15,10 +15,14 @@ let miBoton = document.querySelector('button');
 miTitulo = document.querySelector( 'h1');
 
 function estableceNombreUsuario() {
-    let miNombre = prompt('Por favor, ingresa tu nombre.');
-    localStorage.setItem('nombre', miNombre);
-    miTitulo.textContent = 'Bievenid@ ' + miNombre;
-}
+    let miNombre = prompt('Introduzca su nombre.');
+    if(!miNombre) {
+      estableceNombreUsuario();
+    } else {
+      localStorage.setItem('nombre', miNombre);
+      miTitulo.innerHTML = 'Bienvenid@ ' + miNombre;
+    }
+  }
 
 if (!localStorage.getItem('nombre')) {
     estableceNombreUsuario();
