@@ -1,0 +1,44 @@
+html{
+    font-size: 10px;
+    font-family: "Benne", serif;
+    margin:0;
+    background: -prefix-linear-gradient(top, rgb(255, 170, 203), white);
+    background: linear-gradient(to bottom,rgb(253, 163, 198), white);
+}
+
+body{
+    width: 600px;
+    margin: 0 auto;
+    background-color: #baf5f0;
+    padding: 0 20px 20px 20px;
+    border: 5px solid rgba(0, 162, 255, 0.5);
+}
+
+h1{
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+    color: #fab23e;
+    text-shadow: 3px 3px 1px #ccc;
+}
+  
+p, li{
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+p{
+    text-align: justify;
+}
+
+h3{
+    font-size: 20px;
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+}
