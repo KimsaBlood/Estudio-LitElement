@@ -4,6 +4,7 @@ html{
     margin:0;
     background: -prefix-linear-gradient(180deg, rgb(255, 170, 203), white);
     background: linear-gradient(190deg,rgb(248, 161, 200), rgb(255, 208, 137));
+    animation: fondo 10s infinite;
 }
 
 body{
@@ -22,7 +23,7 @@ a{
 }
 
 h1{
-    font-size: 60px;
+    font-size: 50px;
     text-align: center;
     margin: 0;
     padding: 10px 0;
@@ -57,8 +58,53 @@ img{
 .my-btn{
     margin-top:10px;
     margin-left:465px;
-    background-color: transparent;
+    background-color: #f5f5f5;
     border-style:solid;
     border-color: #f7f7f7;
     color:#fab23e;
+}
+
+.btn-prev{
+    background-color: #fff;
+    color: rgb(2, 176, 199);
+    font-size: 20px;
+    border-style: solid;
+    border-color: #f7f7f7;
+    margin-left: 275px;
+    margin-top:10px;
+}
+
+.btn-next{
+    background-color: #fff;
+    color: rgb(2, 176, 199);
+    font-size: 20px;
+    border-style: solid;
+    border-color: #f7f7f7;
+    margin-left:10px;
+}
+
+.btn-next:hover{
+    background-color: #f1f1f1;
+    color: rgb(0, 217, 255);
+}
+
+.btn-prev:hover{
+    background-color: #f1f1f1;
+    color: rgb(0, 217, 255);
+}
+
+.my-btn:hover{
+    background-color: #f1f1f1;
+    color: rgb(0, 217, 255);
+}
+
+@keyframes fondo{
+    from{
+        background: -prefix-linear-gradient(180deg, rgb(255, 170, 203), white);
+        background: linear-gradient(-10deg,rgb(248, 161, 200), rgb(255, 208, 137));
+    }
+    to{
+        background: -prefix-linear-gradient(180deg, rgb(255, 170, 203), white);
+        background: linear-gradient(190deg,rgb(248, 161, 200), rgb(255, 208, 137));
+    }
 }
